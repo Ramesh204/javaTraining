@@ -1,0 +1,3 @@
+Amurtha,Benguluru,985621476,5
+Hyderbad Hotel,Benguluru,985621476,2
+Andhra Hotel,Benguluru,985621476,3
