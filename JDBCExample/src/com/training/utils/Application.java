@@ -15,7 +15,7 @@ public class Application {
 		
 		
 		System.out.println("Hello");
-		MovieDAO dao = new MovieDAIimpl();
+		DAO dao = new MovieDAIimpl();
 		
 		//int rowAdded = dao.addMovie(movie3);
 		

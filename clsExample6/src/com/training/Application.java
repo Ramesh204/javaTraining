@@ -12,7 +12,7 @@ public class Application {
 		exmpArray.addElements("Suresh");
 		exmpArray.addElements("Mahesh");
 		
-	System.out.println(exmpArray.getIndex());	
+	System.out.println(exmpArray.getSize());	
 	
 		String ele =null;
 		try {
@@ -22,6 +22,11 @@ public class Application {
 		}
 		
 		System.out.println(ele);
+		
+		
+//		exmpArray.removeElement(2);
+		
+		
 	}
 
 }

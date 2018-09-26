@@ -23,30 +23,48 @@ public class myArrayList {
 		return true;
 	}
 	
+	public boolean isVaildIndex(int index){
+		boolean status = true;
+		if((index>size)||(index<0))
+		{	
+			status = false;
+			throw new IndexOutOfBoundsException();
+		}
+		return status;
+	}
 	
-	public Object getElement(int index) throws Exception{
+	public Object getElement(int index) {
 		Object obj = null;
 		
-		if((index<size)&&(index>=0))
-		{
+		if(isVaildIndex(index))
 			obj = array[index];
-		}
-		else throw new ArrayIndexOutOfBoundsException();
 		
 		return obj;
 	}
 	
 	
-	public int getIndex()
+	public int getSize()
 	{
 		return size;
 	}
 	
+	
 	public void removeElement(int index){
 		
-		if((index<size)&&(index>=0))
+		if(isVaildIndex(index))
 		{
-			array[index-1]= array[index+1];
+			for(int i=index;i<size-1;i++){
+			array[i]= array[i+1];
+			}
+			--size;
 		}
+		
+		
+
+	
 	}
+
+
+
+
 }

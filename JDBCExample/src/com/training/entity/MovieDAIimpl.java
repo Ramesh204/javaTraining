@@ -3,6 +3,7 @@ package com.training.entity;
 import java.sql.*;
 import java.util.*;
 
+import com.training.MovieDAO;
 import com.training.utils.DbConnections;
 
 public class MovieDAIimpl implements MovieDAO {
@@ -30,7 +31,7 @@ public class MovieDAIimpl implements MovieDAO {
 	}
 
 	@Override
-	public int addMovie(Movie movie) {
+	public int add(Movie movie) {
 		
 		String sql = "insert into movieanant values(?,?,?,?,?)";
 		
