@@ -1,16 +1,17 @@
 package com.training;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
-public class myArrayList {
+public class myArrayList<T> implements Iterable<T>{
 
-	private static final Exception ArrayIndexOutOfBoundsException = null;
+	
 	private int capacity = 10;
 	private Object array[];
 	private int size=0;
 	
 	public myArrayList(){
-		array = new Object[10];
+		array = new Object[capacity];
 	}
 	
 	public boolean addElements(Object element){
@@ -43,6 +44,19 @@ public class myArrayList {
 	}
 	
 	
+	@Override
+	public String toString() {
+	
+		String str="";
+		
+		
+		for(int i=0;i<size;i++)
+		{
+			str+= array[i].toString()+",";
+		}
+		return str;
+	}
+
 	public int getSize()
 	{
 		return size;
@@ -62,6 +76,36 @@ public class myArrayList {
 		
 
 	
+	}
+
+	@Override
+	public Iterator<T> iterator() {
+		
+		return new  Iterator<T>() {
+			
+			int index =0;
+			
+			
+			@Override
+			public boolean hasNext() {
+				boolean status = false;
+				
+				
+				if(index<size)
+				{
+					status = true;
+				}
+				
+				return status;
+			}
+
+			@Override
+			public T next() {
+				
+				return  (T) array[index++];
+			}
+			
+		};
 	}
 
 

@@ -1,5 +1,6 @@
 package com.training;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,7 +25,9 @@ public class Application {
 	//Generic Method - Type4 - Consuemr
 	
 	public static void addToList(List<? super Integer>list){
-		list.set(0, 7);
+		//list.set(1, 7);
+		list.add(41);
+		
 		// list.set(1,new Boolean(true)); we cant stuff also since Boolean isnt super of Integer
 		// list.add(47) we can't add but we can stuff 
 		// In case of wildcard generic types you cant do structural change (TYPE SAFETY)
@@ -44,7 +47,10 @@ public class Application {
 //		System.out.println(age.getDigit()+", "+age.getList());
 		
 		
-		List<Integer> engList = Arrays.asList(20,30,40);
+		List<Integer> engList =new  ArrayList<>();
+		engList.add(25);
+		engList.add(45);
+		
 		List<Double>  mathList = Arrays.asList(20.03,30.12,41.02);
 //		
 //		System.out.println(showNumbers(engList));
@@ -54,14 +60,14 @@ public class Application {
 		List<Object> studList = Arrays.asList(new Boolean(true),new Boolean(false),new Boolean(true));
 		
 //		print(studList);
-//		print(engList);
+		print(engList);
 //		print(mathList);
 //		
 		//printList(studList); // ? extends number 
 		
 		
 		addToList(engList);
-		addToList(studList);
+		//addToList(studList);
 		//addToList(mathList); // ? super Integer not accepting List<Double>
 		
 

@@ -1,5 +1,6 @@
 package com.training;
 
+import java.util.Iterator;
 
 public class Application {
 
@@ -11,6 +12,8 @@ public class Application {
 		exmpArray.addElements("Ramesh");
 		exmpArray.addElements("Suresh");
 		exmpArray.addElements("Mahesh");
+		
+		System.out.println(exmpArray);
 		
 	System.out.println(exmpArray.getSize());	
 	
@@ -24,7 +27,15 @@ public class Application {
 		System.out.println(ele);
 		
 		
-//		exmpArray.removeElement(2);
+	//exmpArray.removeElement(2);
+		
+		
+		Iterator itr = exmpArray.iterator();
+		
+		while(itr.hasNext()){
+			System.out.print(itr.next()+",");
+		}
+		
 		
 		
 	}
