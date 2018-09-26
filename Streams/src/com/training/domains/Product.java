@@ -9,7 +9,7 @@ public class Product implements Comparable<Product> {
 	private double ratePerUnit;
 	public Product() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Product(long productCode, String productName, String category, double ratePerUnit) {
 		super();
@@ -42,6 +42,7 @@ public class Product implements Comparable<Product> {
 	public void setratePerUnit(double ratePerUnit) {
 		this.ratePerUnit = ratePerUnit;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -79,11 +80,14 @@ public class Product implements Comparable<Product> {
 			return false;
 		return true;
 	}
+	
 	@Override
 	public String toString() {
 		return "Product [productCode=" + productCode + ", productName=" + productName + ", category=" + category
 				+ ", ratePerUnit=" + ratePerUnit + "]";
 	}
+	
+	
 	@Override
 	public int compareTo(Product o) {
 		
