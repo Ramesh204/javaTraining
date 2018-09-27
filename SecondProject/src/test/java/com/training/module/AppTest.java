@@ -40,6 +40,6 @@ public class AppTest
     public void testgetGreet(){
     	String actual = App.getGreet();
     	
-    	assertEquals("Hi", actual);
+    	assertEquals("Hello", actual);
     }
 }
