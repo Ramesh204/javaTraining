@@ -42,11 +42,16 @@ public class Loginservlet extends HttpServlet {
 		String pword = request.getParameter("passWord");
 		
 		boolean isValidUser = false;
+		
+		String errorMessage = "Invalid UserName or PassWord";
+		
 		 if(uname.equals("India")&&(pword.equals("India"))){
 			 isValidUser = true;
 		 }
 		 
 		 RequestDispatcher dispatcher;
+		 
+		 request.setAttribute("errMsg", errorMessage);
 		 
 		 if(isValidUser){
 			 dispatcher = request.getRequestDispatcher("Success.jsp");

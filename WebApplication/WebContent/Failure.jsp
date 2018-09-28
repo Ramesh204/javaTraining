@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2 style="color:red">Failure</h2>
+
+<%
+	out.println(request.getAttribute("errMsg"));
+%>
+
+<a href="index.html">TryAgain</a>
 </body>
 </html>
