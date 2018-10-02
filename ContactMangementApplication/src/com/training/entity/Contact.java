@@ -2,7 +2,7 @@ package com.training.entity;
 
 import java.util.List;
 
-public class Contact {
+public class Contact implements Comparable<Contact> {
 	
 	private long contactId;
 	private Person person;
@@ -45,8 +45,18 @@ public class Contact {
 	}
 	@Override
 	public String toString() {
-		return "Contact [contactId=" + contactId + ", person=" + person + ", relation=" + relation + ", numbers="
-				+ numbers + "]";
+		
+		String s="";
+		
+		s+=person+ "\n" + "Relation:"+relation+ "\n"+ "PhoneNumber:"+numbers ;
+		
+		
+		return s;
+	}
+	@Override
+	public int compareTo(Contact o) {
+		// TODO Auto-generated method stub
+		return this.getPerson().getFirstName().compareTo(o.getPerson().getFirstName());
 	}
 	
 	

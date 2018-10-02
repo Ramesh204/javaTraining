@@ -125,15 +125,16 @@ public class Application {
 //		}
 //		System.out.println(rowadded);
 		
-//		Set<Contact> contactList = new HashSet<>();
-//		try {
-//		contactList =	daoimpl.showAllContacts();
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		System.out.println(contactList);
+		Set<Contact> contactList = new TreeSet<>();
+		try {
+		contactList =	daoimpl.showAllContacts();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		//System.out.println(contactList);
+		contactList.forEach(System.out::println);
 		
 //		
 		Map<String,Number> map = new HashMap<>();

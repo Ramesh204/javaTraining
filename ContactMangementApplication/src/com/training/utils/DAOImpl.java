@@ -192,7 +192,7 @@ public class DAOImpl implements DAO {
 
 
 	@Override
-	public Set<Contact> showAllContacts() throws SQLException {
+	public TreeSet<Contact> showAllContacts() throws SQLException {
 		
 		sql = "select firstname from contactanant order by firstName";
 		
@@ -200,7 +200,7 @@ public class DAOImpl implements DAO {
 		
 		ResultSet rs = pstmt.executeQuery();
 		
-		Set<Contact> contactList = new HashSet<>();
+		TreeSet<Contact> contactList = new TreeSet<>();
 		while(rs.next()){
 			
 			contactList.add(getContactByName(rs.getString(1)));
@@ -225,7 +225,7 @@ public class DAOImpl implements DAO {
 		ResultSet rs = pstmt.executeQuery();
 		
 		Map<String,Number> map = new HashMap<>();
-		while(rs.next()){
+		if(rs.next()){
 		map.put(rs.getString(1),rs.getInt(2));
 		}
 		
