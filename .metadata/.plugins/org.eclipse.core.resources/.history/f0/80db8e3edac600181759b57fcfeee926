@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Web Application</title>
+</head>
+<body>
+<!-- 
+<a href="movie">Show Movies</a> <br/>
+<a href="first">FirstExample</a>
+<form action="login" method="post">
+	<label for="userName">UserName</label>
+	<input type="text"  name="userName" placeholder="Enter UserName" id="userName"/>
+	<label for="passWord">PassWord</label>
+	<input type="text" name="passWord" placeholder="Enter the Password" id="passWord"/>
+	<input type="submit"  value="login"/>
+</form> -->
+
+<form action="addmovie" method="post">
+	<label for="movieId">MovieId</label>
+	<input type="text" placeholder="Enter MovieId" name="movieId"/>
+	<label for="movieName">MovieName</label>
+	<input type="text" placeholder="Enter MovieName" name="movieName"/>
+	<label for="director">Director</label>
+	<input type="text" placeholder="Enter Director Name" name="director" />
+	<label for="genre">Genre</label>
+	<input type="text" placeholder="Enter Genre" name="genre" />
+	<label for="rating">Rating</label>
+	<input type="text" placeholder="Enter Rating" name="rating"/>
+	
+	<input type="submit" value="addMovie" />
+</form>
+</body>
+</html>

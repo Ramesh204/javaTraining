@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WebApplication/WebContent/ProcessRatingjsp.jsp&apos; to &apos;ProcessRating.jsp&apos;" description="Rename resource &apos;ProcessRatingjsp.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/ProcessRatingjsp.jsp" name="ProcessRating.jsp" stamp="1538550437979" updateReferences="true"/>
+</session>

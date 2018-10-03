@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MiniShoppingCart/WebContent/cartItems.jsp&apos; to &apos;coupons.jsp&apos;" description="Rename resource &apos;cartItems.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/cartItems.jsp" name="coupons.jsp" stamp="1538561470560" updateReferences="true"/>
+</session>
