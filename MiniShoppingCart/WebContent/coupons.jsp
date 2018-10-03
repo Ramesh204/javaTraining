@@ -9,7 +9,6 @@
 <body>
 <%
 	session.setAttribute("jspPage", 3);
-
 %>
 
 <form action="cart">

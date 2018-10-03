@@ -7,21 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h2>Selected Items</h2>
 <%
 	Map<String,String[]> itemSelected =(Map<String,String[]>) session.getAttribute("cart");
 	
 	Set<String> itemCategory = itemSelected.keySet(); 
 	
-	for(String item:itemCategory){
-		out.println(item); %>
+	for(String item:itemCategory){%>
+	<b><br/>	<%out.println(item); %>: </b>
 		
-<p><%		
+<%		
 		
 		for(String key:itemSelected.get(item)){
 		out.println(key);
 	} 
 	}
-%> </p>
+%>
 </body>
 </html>
