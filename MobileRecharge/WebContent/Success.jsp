@@ -13,6 +13,8 @@
 	
 	response.addCookie(cky1);
 	response.addCookie(cky2);
+	
+	out.println("Hello");
 %>
 <h1>Recharge Successful</h1>
 
