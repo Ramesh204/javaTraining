@@ -3,39 +3,52 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>PlanList</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-
+<style type="text/css">
+	table{
+	border:1px solid black;
+	font-size:18px;
+	
+	}
+</style>
 </head>
 <body>
-
-<div id="A1">
-<div>
-<h2>Plan1</h2>
-<ul>
-	<li>Enjoy Unlimited Calling </li>
-	<li>1GB Data Per Day</li>
-	<li>Plan at Rs.149 for 56days</li>
-</ul>
-</div>
-
-
-<div>
-<h2>Plan2</h2>
-<ul>
-	<li>Enjoy Unlimited Calling</li>
-	<li>1.5GB Data Per Day</li>
-	<li>Plan at Rs.299 for 84days</li>
-</ul>
-</div>
-
-<div>
-<h2>Plan3</h2>
-<ul>
-	<li>Enjoy Unlimited Calling</li>
-	<li>2Gb Data Per Day</li>
-	<li>Plan at Rs.349 for 84days</li>
-</ul>
-</div>
+<div class="col-sm-6">
+<table class="table table-hover">
+	<tr class="success">
+		<th>Plan Name</th>
+		<th>Features</th>
+		<th>Cost</th>
+	</tr>
+	<tr>
+		<td>Plan1</td>
+		<td><ul>
+			<li>Unlimited Calling</li>
+			<li>1 Gb Data Per Day</li>
+			<li>Validity 28 Days</li>
+		</ul></td>
+		<td>Rs.199</td>
+	</tr>
+	<tr>
+		<td>Plan2</td>
+		<td><ul>
+			<li>Unlimited calling</li>
+			<li>1.5 Gb Data Per Day</li>
+			<li>Validity 56 Days</li>
+		</ul></td>
+		<td>Rs.299</td>
+	</tr>
+	<tr>
+		<td>Plan3</td>
+		<td><ul>
+			<li>Unlimited Calling</li>
+			<li>2 Gb Data Per Day</li>
+			<li>Validity 84 Days</li>
+		</ul></td>
+		<td>Rs.399</td>
+	</tr>
+</table>
 
 </div>
 </body>

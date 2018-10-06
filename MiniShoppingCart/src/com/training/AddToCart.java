@@ -54,7 +54,7 @@ public class AddToCart extends HttpServlet {
 			
 			
 			items.put("Gadgets", arr);
-			dispatcher = request.getRequestDispatcher("coupons.jsp");
+			dispatcher = request.getRequestDispatcher("/coupons.jsp");
 		}
 		else{
 			items.put("Coupons", request.getParameterValues("coupnSelected"));
