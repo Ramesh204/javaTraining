@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery1-7-2.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$.get("http://10.140.1.112:8080/REST_WebServices/rest/quick",function(resp){
+		$("#msg").html(resp);
+	});
+});
+</script>
+</head>
+<body>
+
+ 
+ <div id="msg">
+ 
+ </div>
+ 
+</body>
+</html>
