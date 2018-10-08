@@ -4,7 +4,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Sun NetWork</title>
+<title>Jio 4G</title>
+
+<style type="text/css">
+h1{
+text-align:center;
+font-size:35px;
+color:green;
+}
+
+div{
+text-align:center;
+font-size:30px;
+color:blue;
+}
+
+</style>
+
 </head>
 <body>
 <%
@@ -14,10 +30,14 @@
 	response.addCookie(cky1);
 	response.addCookie(cky2);
 	
-	out.println("Hello");
+	
 %>
-<h1>Recharge Successful</h1>
+<%@include file="title.html" %>
 
+<h1>Recharge SuccessFul</h1>
+<div>
 <a href="index.jsp">Go To Home</a>
+</div>
+
 </body>
 </html>

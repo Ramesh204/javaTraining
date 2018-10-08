@@ -45,7 +45,7 @@ public class LogFilter implements Filter {
 		Logger log = Logger.getLogger("second");
 		
 		HttpServletRequest req = (HttpServletRequest) request;
-//		System.out.println("One request From"+req.getRemoteAddr()+"  "+req.getRequestURL()+"@"+new Date()+"Recieved");
+		System.out.println("One request From"+req.getRemoteAddr()+"  "+req.getRequestURL()+"@"+new Date()+"Recieved");
 		
 		log.info("One request From"+req.getRemoteAddr()+"  "+req.getRequestURL()+"@"+new Date()+"Recieved");
 		chain.doFilter(request, response);
